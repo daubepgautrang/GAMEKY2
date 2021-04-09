@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Graphic">
+      <UniqueIdentifier>{98c101cd-a7a1-4f49-9e9b-e07d2232fb40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Texture">
+      <UniqueIdentifier>{ab345099-bbff-4c05-a4d1-b379f808d578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Sprite">
+      <UniqueIdentifier>{e4827f65-a54c-4b41-a39a-1d3531b5ace4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Animation">
+      <UniqueIdentifier>{84e4b253-fcb6-4449-94c0-96d81c0a46e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{b191e612-e9bf-40f1-9b38-c56f404a1a7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Mario">
+      <UniqueIdentifier>{730ebf58-5e25-49e2-8944-17d3af5583a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Goomba">
+      <UniqueIdentifier>{c2d5eecb-69b2-49f7-90ec-25e4040ab104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Koopas">
+      <UniqueIdentifier>{870abfb3-259a-48df-828c-348486c52043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Brick">
+      <UniqueIdentifier>{7f4c070c-d738-49f0-9eae-14b3a970b3d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Portal">
+      <UniqueIdentifier>{a261da0f-9f51-415d-9c0d-13a34997e3f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scence">
+      <UniqueIdentifier>{9ad9a0c2-c197-4048-bdd5-0bf6911086fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{ede20ce3-cc4d-426b-9578-9db507f1a049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{5524ce8d-0b6d-43f0-b89f-de7bc0b17fd9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Textures.cpp">
+      <Filter>Graphic\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprites.cpp">
+      <Filter>Graphic\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Animations.cpp">
+      <Filter>Graphic\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Mario.cpp">
+      <Filter>GameObject\Mario</Filter>
+    </ClCompile>
+    <ClCompile Include="Koopas.cpp">
+      <Filter>GameObject\Koopas</Filter>
+    </ClCompile>
+    <ClCompile Include="Goomba.cpp">
+      <Filter>GameObject\Goomba</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayScence.cpp">
+      <Filter>Scence</Filter>
+    </ClCompile>
+    <ClCompile Include="Scence.cpp">
+      <Filter>Scence</Filter>
+    </ClCompile>
+    <ClCompile Include="Brick.cpp">
+      <Filter>GameObject\Brick</Filter>
+    </ClCompile>
+    <ClCompile Include="Portal.cpp">
+      <Filter>GameObject\Portal</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Textures.h">
+      <Filter>Graphic\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprites.h">
+      <Filter>Graphic\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Animations.h">
+      <Filter>Graphic\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Mario.h">
+      <Filter>GameObject\Mario</Filter>
+    </ClInclude>
+    <ClInclude Include="Koopas.h">
+      <Filter>GameObject\Koopas</Filter>
+    </ClInclude>
+    <ClInclude Include="Goomba.h">
+      <Filter>GameObject\Goomba</Filter>
+    </ClInclude>
+    <ClInclude Include="Scence.h">
+      <Filter>Scence</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayScence.h">
+      <Filter>Scence</Filter>
+    </ClInclude>
+    <ClInclude Include="Brick.h">
+      <Filter>GameObject\Brick</Filter>
+    </ClInclude>
+    <ClInclude Include="Portal.h">
+      <Filter>GameObject\Portal</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Keyboard.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXLibrary.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
