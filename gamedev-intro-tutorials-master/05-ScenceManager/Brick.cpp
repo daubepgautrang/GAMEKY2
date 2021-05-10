@@ -1,8 +1,11 @@
 #include "Brick.h"
+#include "Camera.h"
+#include "Game.h"
 
 void CBrick::Render()
 {
-	animation_set->at(0)->Render(x, y);
+	Camera* camera = CGame::GetInstance()->GetCurrentScene()->GetCamera();
+	animation_set->at(0)->Render(x - camera->X(), y - camera->Y());
 	//RenderBoundingBox();
 }
 

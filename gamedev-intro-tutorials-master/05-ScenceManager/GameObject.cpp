@@ -7,6 +7,7 @@
 #include "Game.h"
 #include "GameObject.h"
 #include "Sprites.h"
+#include "Camera.h"
 
 CGameObject::CGameObject()
 {
@@ -129,7 +130,9 @@ void CGameObject::RenderBoundingBox()
 	rect.right = (int)r - (int)l;
 	rect.bottom = (int)b - (int)t;
 
-	CGame::GetInstance()->Draw(x, y, bbox, rect.left, rect.top, rect.right, rect.bottom, 32);
+	Camera* camera = CGame::GetInstance()->GetCurrentScene()->GetCamera();
+
+	CGame::GetInstance()->Draw(x-camera->X(), y-camera->Y(), bbox, rect.left, rect.top, rect.right, rect.bottom, 32);
 }
 
 
