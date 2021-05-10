@@ -40,6 +40,9 @@
     <Filter Include="Input">
       <UniqueIdentifier>{5524ce8d-0b6d-43f0-b89f-de7bc0b17fd9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{3f86ce6d-9b24-4b53-a776-84cb4eb31aea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Textures.cpp">
@@ -82,6 +85,9 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Keyboard.cpp">
       <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Camera</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +133,9 @@
     </ClInclude>
     <ClInclude Include="DirectXLibrary.h">
       <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Camera</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

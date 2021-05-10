@@ -8,6 +8,7 @@
 #include "Portal.h"
 #include "DirectXLibrary.h"
 #include "Keyboard.h"
+#include "Camera.h"
 
 using namespace std;
 
@@ -70,7 +71,7 @@ void CPlayScene::_ParseSection_SPRITES(string line)
 	if (tex == NULL)
 	{
 		DebugOut(L"[ERROR] Texture ID %d not found!\n", texID);
-		return; 
+		return;   
 	}
 
 	CSprites::GetInstance()->Add(ID, l, t, r, b, tex);
@@ -224,6 +225,11 @@ void CPlayScene::Load()
 
 	CTextures::GetInstance()->Add(ID_TEX_BBOX, L"textures\\bbox.png", D3DCOLOR_XRGB(255, 255, 255));
 
+	this->camera = new Camera();
+	this->camera->SetPosition(0, 0);
+	this->camera->SetSize(320, 240);
+	this->camera->SetTarget(player);
+
 	DebugOut(L"[INFO] Done loading scene resources %s\n", sceneFilePath);
 }
 
@@ -244,17 +250,12 @@ void CPlayScene::Update(DWORD dt)
 	}
 
 	// skip the rest if scene was already unloaded (Mario::Update might trigger PlayScene::Unload)
-	if (player == NULL) return; 
+	if (player == NULL) return;
 
-	// Update camera to follow mario
-	float cx, cy;
-	player->GetPosition(cx, cy);
-
-	CGame *game = CGame::GetInstance();
-	cx -= game->GetScreenWidth() / 2;
-	cy -= game->GetScreenHeight() / 2;
-
-	CGame::GetInstance()->SetCamPos(cx, 0.0f /*cy*/);
+	if (camera != nullptr) 
+	{
+		camera->Update();
+	}
 }
 
 void CPlayScene::Render()
